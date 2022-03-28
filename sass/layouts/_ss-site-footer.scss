@@ -12,10 +12,13 @@
     }
 
     &__logo {
-         
+        max-width: 225px;
+        margin: 0 auto;
+
         @include media-breakpoint-up(md) {
             max-width: 265px;
         }
+
         @include media-breakpoint-up(md) {
             max-width: 100%;
         }

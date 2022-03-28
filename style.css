@@ -13162,8 +13162,14 @@ iframe {
 
 .contact-form .form-group label {
   color: #0864B1;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .contact-form .form-group label {
+    font-size: 1.25rem;
+  }
 }
 
 .contact-form .form-group textarea {
@@ -13234,6 +13240,11 @@ iframe {
     text-align: center;
     justify-content: center;
   }
+}
+
+.site-footer__logo {
+  max-width: 225px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {

@@ -156,8 +156,12 @@
         .form-group {
             label {
                 color: $blue;
-                @include font-size(1.25rem);
+                @include font-size(1.125rem);
                 font-weight: 700;
+
+                @include media-breakpoint-up(lg) {
+                    @include font-size(1.25rem);
+                }
             }
 
             textarea {
