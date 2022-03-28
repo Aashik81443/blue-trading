@@ -1,0 +1,40 @@
+//news-slider
+.slick {
+    &-dots {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding-left: 0;
+
+        button {
+            background-color: transparent;
+            border: 1px solid transparent;
+            outline: none;
+            box-shadow: none;
+            @include font-size(0);
+            padding: 0;
+            // border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            z-index: 1;
+            transition: .3s ease-in-out;
+            margin: 0 .6rem;
+
+
+            &::before {
+                position: absolute;
+                z-index: -1;
+                content: '';
+                top: 50%;
+                left: 50%;
+                height: 5px;
+                width: 35px;
+                background: rgba(125, 125, 128, 0.671);
+                // border-radius: 50%;
+                transform: translate(-50%, -50%);
+
+            }
+        }
+    }
+}

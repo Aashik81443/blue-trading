@@ -1,0 +1,27 @@
+.section-title {
+    h2 {
+        @include font-size(1.6rem);
+        font-weight: 800;
+        color: $blue;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 0.9rem;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(2rem);
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background:$blue;
+        }
+    }
+}

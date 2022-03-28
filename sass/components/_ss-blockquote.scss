@@ -1,0 +1,72 @@
+.blockquote {
+    max-width: 831px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    background-color: $white;
+    border-radius: 6px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 3rem 3rem 2rem 3rem;
+    }
+
+    &-content {
+        padding: 1rem;
+        position: relative;
+        @include font-size(1rem);
+
+        @include media-breakpoint-up(lg) {
+            padding: 2rem;
+            @include font-size(1.125rem);
+        }
+
+
+        &::before {
+            content: '\e904';
+            font-family: 'icomoon';
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: $blue;
+            @include font-size(1rem);
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(2rem);
+
+            }
+
+        }
+
+        &::after {
+            content: '\e903';
+            font-family: 'icomoon';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: $blue;
+            @include font-size(1rem);
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(2rem);
+
+            }
+
+        }
+    }
+
+    &-author {
+        h3 {
+            color: $blue;
+            @include font-size(1.3rem);
+            text-transform: capitalize;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(1.75rem);
+
+            }
+        }
+        small{
+            text-transform: capitalize;
+        }
+    }
+}

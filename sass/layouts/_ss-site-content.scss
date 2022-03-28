@@ -1,0 +1,211 @@
+//about
+.about {
+    background-color: $white;
+
+    &-content {
+        @include font-size(1.125rem);
+        max-width: auto;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1.25rem 1.5625rem;
+
+
+        @include media-breakpoint-down(sm) {
+            text-align: justify;
+            padding: 0.8625rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include font-size(1.375rem);
+            max-width: 800px;
+            font-weight: 600;
+        }
+    }
+
+    .counter {
+        max-width: 1452px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        [class^="col-"] {
+            margin-bottom: 2rem;
+
+        }
+
+        @include media-breakpoint-down(sm) {
+            [class^="col-"] {
+                @include make-col(6);
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            [class^="col-"] {
+                border-right: 1px solid rgba($blue, 0.65);
+                position: relative;
+                right: -1px;
+            }
+        }
+
+        &-item {
+            text-align: center;
+        }
+
+
+    }
+}
+
+//features
+.features {
+    background-color: rgba(177, 175, 175, 0.233);
+
+    .row {
+        max-width: 1452px;
+        margin: 0 auto;
+
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+
+            [class^="col-"] {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+//news
+.news {
+    .row {
+        @include media-breakpoint-down(sm) {
+            [class^="col-"] {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
+//testimonial
+.testimonial {
+    background-color: rgba(177, 175, 175, 0.233);
+
+}
+
+//newsletter
+.newsletter {
+    background: $blue;
+
+    .row {
+        align-items: center;
+    }
+
+    &-content {
+        h2 {
+            color: $white;
+            @include font-size(1.5rem);
+            font-weight: 700;
+
+            @include media-breakpoint-up(lg) {
+                @include font-size(3rem);
+
+            }
+
+            @include media-breakpoint-up(xl) {
+                @include font-size(4rem);
+
+            }
+        }
+    }
+
+    &-form {
+        @include media-breakpoint-up(md) {
+            text-align: center;
+        }
+
+        .form-control {
+            border-radius: 0;
+            height: 45px;
+            max-width: 350px;
+
+
+            @include media-breakpoint-up (lg) {
+                margin: 0 auto;
+                height: 55px;
+            }
+        }
+
+        .btn-contact {
+            background-color: transparent;
+            border: 3px solid $white;
+            color: $white;
+            padding: .8rem;
+            text-transform: capitalize;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//contact
+.contact {
+    background-color: rgba(177, 175, 175, 0.233);
+
+    &-form {
+
+        .form-group {
+            label {
+                color: $blue;
+                @include font-size(1.25rem);
+                font-weight: 700;
+            }
+
+            textarea {
+                height: 125px;
+
+                @include media-breakpoint-up(lg) {
+                    height: 180px;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    height: 250px;
+                }
+            }
+        }
+
+        .form-control {
+            height: 40px;
+
+            @include media-breakpoint-up(lg) {
+                height: 45px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                height: 55px;
+            }
+        }
+
+        .btn-empty {
+            text-transform: capitalize;
+            padding: 1rem;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .btn-message {
+            color: $white;
+            background-color: $blue;
+            text-transform: capitalize;
+            padding: 1rem;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+}

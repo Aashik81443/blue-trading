@@ -1,0 +1,123 @@
+//news
+.news {
+    &-slider {
+        &__item {
+            padding: 0.75rem;
+        }
+
+        .slick {
+
+            &-active {
+                button {
+                    // border: 1px solid rgba(125, 125, 128, 0.671);
+
+                    &::before {
+                        background: $blue;
+                        width: 35px;
+                        height: 5px;
+                    }
+                }
+            }
+
+            &-track {
+                display: flex;
+            }
+
+            &-slide {
+                height: inherit;
+            }
+        }
+    }
+}
+
+//testimonial
+.testimonial {
+    &-slider {
+        @include media-breakpoint-down(lg) {
+            padding-bottom: 45px;
+        }
+
+        &__item {
+            padding: 0.75rem;
+        }
+
+        .slick {
+            &-arrow {
+                font-size: 0;
+                line-height: 1;
+                border: 0;
+                background-color: transparent;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                bottom: 0;
+                z-index: 5;
+                color: $white;
+                transition: all 0.3s ease-in-out;
+
+                @include media-breakpoint-down(lg) {
+                    margin-right: 0.5rem;
+                }
+
+                &:focus,
+                &:hover {
+                    outline: 0;
+                }
+
+                &:before {
+                    content: ' ';
+                    font-family: 'icomoon';
+                    @include font-size(1.4375rem);
+                    color: rgba(128, 128, 128, 0.418);
+
+                    @include media-breakpoint-up(lg) {
+                        @include font-size(3.5rem);
+                    }
+
+                    // color: $soft-red-1;
+                }
+            }
+
+            &-prev {
+                left: auto;
+                right: 50.4%;
+
+                @include media-breakpoint-up(lg) {
+                    right: auto;
+                    left: -50px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+
+                &:before {
+                    content: '\e90b';
+                }
+            }
+
+            &-next {
+                right: auto;
+                left: 50.4%;
+
+                @include media-breakpoint-up(lg) {
+                    right: -50px;
+                    left: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &:before {
+                    content: '\e902';
+                }
+            }
+
+            &-track {
+                display: flex;
+            }
+
+            &-slide {
+                height: inherit;
+            }
+        }
+    }
+}
