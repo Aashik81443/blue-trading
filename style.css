@@ -12562,7 +12562,7 @@ iframe {
   text-align: center;
 }
 
-.counter-block h1 {
+.counter-block h2 {
   display: inline-block;
   text-align: center;
   font-size: 2rem;
@@ -12571,19 +12571,19 @@ iframe {
 }
 
 @media (min-width: 768px) {
-  .counter-block h1 {
+  .counter-block h2 {
     font-size: 2.5rem;
   }
 }
 
 @media (min-width: 992px) {
-  .counter-block h1 {
+  .counter-block h2 {
     font-size: 2.8rem;
   }
 }
 
 @media (min-width: 1200px) {
-  .counter-block h1 {
+  .counter-block h2 {
     font-size: 3.5rem;
   }
 }
