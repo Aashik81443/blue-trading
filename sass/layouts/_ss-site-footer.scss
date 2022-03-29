@@ -87,6 +87,8 @@
                         background-color: $white;
                         padding: .5rem;
                         border-radius: 8px;
+                        border: 1px solid transparent;
+                        transition: all .3s ease-in-out;
 
                         @include media-breakpoint-up(md) {
                             padding: .8rem;
@@ -94,6 +96,14 @@
 
                         @include media-breakpoint-up(xl) {
                             padding: 1rem;
+                        }
+
+                        &:focus,
+                        &:hover {
+                            border-color: $white;
+                            background-color: transparent;
+                            color: $white;
+                            text-decoration: none;
                         }
                     }
                 }
@@ -120,7 +130,7 @@
         }
 
         span {
-            color: $white;
+            color: rgba($white, 0.35);
         }
     }
 }

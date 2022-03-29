@@ -49,4 +49,10 @@ $(document).ready(function () {
         adaptiveHeight: true,
         slidesToScroll: 1,
     });
+
+    //counter
+    $('.counts').counterUp({
+        delay: 10,
+        time: 1000
+    });
 });
