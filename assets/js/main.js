@@ -51,8 +51,13 @@ $(document).ready(function () {
     });
 
     //counter
-    $('.counts').counterUp({
+    // $('.counts').counterUp({
+    //     delay: 10,
+    //     time: 1000
+    // });
+
+    $(".counts").countUp({
+        time: 3000,
         delay: 10,
-        time: 1000
     });
 });
