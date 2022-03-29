@@ -12911,7 +12911,7 @@ iframe {
 @media (max-width: 767.98px) {
   .navbar-nav .nav-item {
     background-color: #fff;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid rgba(8, 100, 177, 0.14);
   }
